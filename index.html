@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap"
+        rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                <a href="https://app.aluracursos.com/emprega-one/profile/diegollanosr" target="_blank"> 
+                    <img class="logo" src="./imagenes/Logo.png">
+                </a>
+          
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <input type="text" id="textoIngresado" class="inputtextarea" placeholder="Ingrese el texto aquí" autofocus></input>
+                <div class="content_botones">
+                    <span class="info">
+                        Solo letras minúsculas y sin acentos
+                    </span>
+                    <div class="botones">
+                        <button onclick="encriptarTexto();"  class="button__encriptar">Encriptar</button>
+                        <button onclick="desencriptarTexto();"  class="button__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="munheco" class="munheco" src="./imagenes/Muñeco.png" alt="Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.">
+                <textarea id="texto" class="textoFinal" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p id="informacion"class="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button onclick="copiarTexto()" id="botonCopiar" class="button__copiar bn_ocultar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- id="button__encriptar"
+id="button__desencriptar"
+id="button__copiar" -->
